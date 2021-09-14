@@ -26,5 +26,6 @@ Hello from Docker!
 
 func main() {
 	http.HandleFunc("/", handler)
+	log.Println("Staring Whale Server")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
